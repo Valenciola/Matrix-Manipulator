@@ -9,10 +9,33 @@ h1 {
 
 #toptitle {
     background-color: white;
-    padding: 4px;
+    padding: 7px;
     text-align: center;
     width: max-content;
     display: block;
     margin-inline: auto;
     border-radius: 4px;
+}
+
+/* Matrix */
+table {
+    border: solid black 3px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+th, td {
+    border: solid black 2px;
+    padding: 4px;
+    text-align: center;
+    width: 50%;
+}
+#matrix-con {
+    background-color: white;
+    padding: 4px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    border-radius: 6px;
 }
