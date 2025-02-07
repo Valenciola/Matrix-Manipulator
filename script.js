@@ -1,13 +1,18 @@
+// Generation
+let contents = [[1, 0], [0, 1]];
 genMatrix = function() {
+    // Generate the matrix using form data
     const rows = document.getElementById("rows").value;
     const columns = document.getElementById("columns").value;
     const table = document.getElementById("matrix");
+    let contents = [];
     //console.log(rows, columns);
 
     table.innerHTML = '';
 
     for (let i = 0; i < rows; i++) {
         let row = document.createElement("tr");
+        let rowcont = [];
         for (let j = 0; j < columns; j++) {
             entry = document.createElement("td");
             row.appendChild(entry);
@@ -18,7 +23,9 @@ genMatrix = function() {
             else {
                 entry.innerHTML = "0"
             }
+            rowcont.push(parseFloat(entry.textContent));
         }
+        contents.push(rowcont);
         row.id = `r${i + 1}`;
         table.append(row);
     }
@@ -27,4 +34,9 @@ genMatrix = function() {
     tdElements.forEach(td => {
         td.style.width = ((1/columns) * 100 + "%");
     });
+    console.log(contents);
 }
+
+// Detection (calculate determinant, detect RREF)
+
+// Operations (for scalar, multiplication, addition, the like)
