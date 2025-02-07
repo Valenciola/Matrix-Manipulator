@@ -19,6 +19,7 @@ genMatrix = function() {
                 entry.innerHTML = "0"
             }
         }
+        row.id = `r${i + 1}`;
         table.append(row);
     }
 

@@ -2,8 +2,7 @@
 
 ## Basics
 ### Matrix Generation
-- Being able to create a matrix of dimensions m x n (so use buttons to extend or shrink; how to do this with arrays in JS?)
-- Making each cell of the matrix able to take a typed-in value
+- Making each cell of the matrix able to take a typed-in value (lock/unlock editing)
 
 ### Matrix Manipulation
 - Elementary row equations (scalars and whatnot)
@@ -15,3 +14,8 @@
 
 ## Additional Features
 - Alerting whether a matrix is consistent or inconsistent, or in RREF (for aesthetics)
+- Find the determinant
+
+## Aesthetic
+- Make the table square
+- Make form input more visually pleasing
